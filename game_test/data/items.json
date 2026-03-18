@@ -1,0 +1,145 @@
+{
+  "items": {
+    "material_1": {
+      "id": "material_1",
+      "name": "Squid Ink",
+      "type": "material",
+      "rarity": "common",
+      "value": 5,
+      "description": "Mysterious ink extracted from deep-sea squids",
+      "image_path": "../graphics/items/squid_ink.png"
+    },
+    "material_2": {
+      "id": "material_2",
+      "name": "Spirit Essence",
+      "type": "material",
+      "rarity": "uncommon",
+      "value": 15,
+      "description": "The essence of the soul emits a faint light",
+      "image_path": "../graphics/items/spirit_essence.png"
+    },
+    "material_3": {
+      "id": "material_3",
+      "name": "Bamboo Fragment",
+      "type": "material",
+      "rarity": "common",
+      "value": 8,
+      "description": "Tough bamboo strips",
+      "image_path": "../graphics/items/bamboo_fragment.png"
+    },
+    "consumable_1": {
+      "id": "consumable_1",
+      "name": "Raccoon Healing Herb",
+      "type": "consumable",
+      "rarity": "uncommon",
+      "value": 20,
+      "effect": "heal",
+      "effect_value": 30,
+      "description": "The therapeutic herbs cherished by Raccoons",
+      "image_path": "../graphics/items/raccoon_herb.png"
+    },
+    "consumable_2": {
+      "id": "consumable_2",
+      "name": "Raccoon Energy Root",
+      "type": "consumable",
+      "rarity": "rare",
+      "value": 35,
+      "effect": "energy",
+      "effect_value": 40,
+      "description": "The magical root for restoring energy",
+      "image_path": "../graphics/items/raccoon_root.png"
+    },
+    "special_1": {
+      "id": "special_1",
+      "name": "Raccoon Lucky Charm",
+      "type": "special",
+      "rarity": "epic",
+      "value": 100,
+      "effect": "luck_boost",
+      "effect_value": 1.2,
+      "description": "A Raccoon amulet that brings good luck",
+      "image_path": "../graphics/items/raccoon_charm.png"
+    },
+    "special_2": {
+      "id": "special_2",
+      "name": "Ancient Raccoon Talisman",
+      "type": "special",
+      "rarity": "legendary",
+      "value": 250,
+      "effect": "exp_boost",
+      "effect_value": 1.5,
+      "description": "The ancient Raccoon totem contains mysterious power",
+      "image_path": "../graphics/items/raccoon_talisman.png"
+    }
+  },
+  
+  "monster_drop_tables": {
+    "squid": {
+      "drops": [
+        {
+          "item_id": "material_1",
+          "chance": 0.6,
+          "min_quantity": 1,
+          "max_quantity": 2
+        }
+      ]
+    },
+    "spirit": {
+      "drops": [
+        {
+          "item_id": "material_2",
+          "chance": 0.4,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    "bamboo": {
+      "drops": [
+        {
+          "item_id": "material_3",
+          "chance": 0.7,
+          "min_quantity": 1,
+          "max_quantity": 3
+        }
+      ]
+    },
+    "raccoon": {
+      "drops": [
+        {
+          "item_id": "consumable_1",
+          "chance": 0.5,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "item_id": "consumable_2",
+          "chance": 0.3,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "item_id": "special_1",
+          "chance": 0.1,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "item_id": "special_2",
+          "chance": 0.02,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    }
+  },
+  
+  "rarity_colors": {
+    "common": "#FFFFFF",
+    "uncommon": "#00FF00",
+    "rare": "#0070FF",
+    "epic": "#A335EE",
+    "legendary": "#FF8000",
+    "immortal": "#FF0000"
+  }
+}
